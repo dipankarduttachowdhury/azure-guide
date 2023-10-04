@@ -30,10 +30,7 @@ jobs:
       - name: Run Streamlit app
         run: |
           source venv/bin/activate
-          
-      - name: Run streamlit
-        run: nohup streamlit run azure.py --server.port 8080 &
-
+        
       
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
