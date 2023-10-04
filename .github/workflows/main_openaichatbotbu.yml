@@ -30,7 +30,11 @@ jobs:
       - name: Run Streamlit app
         run: |
           source venv/bin/activate
-          streamlit run azure.py
+          
+      - name: Run streamlit
+        run: streamlit run myapp.py --server.enableCORS false --browser.serverAddress 0.0.0.0 --server.port 80
+
+
       
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
