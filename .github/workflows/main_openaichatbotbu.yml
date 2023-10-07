@@ -63,4 +63,4 @@ jobs:
           app-name: 'openaichatbotbu'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B8FA115D2F7D4EB98666E2A4295D564E }}
-          startup-command: "streamlit run azure.py --server.port 8080"
+          
