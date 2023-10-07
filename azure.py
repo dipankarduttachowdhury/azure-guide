@@ -3,7 +3,10 @@ import streamlit as st
 import openai
 
 # Set up your OpenAI API key
-openai.api_key = 'your-api-key'
+import os
+
+openai.api_key = os.environ.get('OPENAI_API_KEY')
+
 
 # Initialize Streamlit
 st.title("Azure Guide Chatbot")
