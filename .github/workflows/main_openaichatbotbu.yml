@@ -27,10 +27,7 @@ jobs:
         run: pip install -r requirements.txt
 
       # Add step to run Streamlit app
-      - name: Run Streamlit app
-        run: |
-          source venv/bin/activate
-        
+
       
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
